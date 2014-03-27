@@ -82,14 +82,14 @@ the file *repository_content.txt*, it won't scan the web server on its own.
 
 The content of *repository_content.txt* of our example drawing would be:
 
-/packages/prog1_4.2.1.tar.gz               
-/packages/prog1_4.2.2.tar.gz               
-/packages/prog2_3.2.4.tar.gz               
-/packages/prog2_3.4.2.tar.gz               
-/releases/firstRelease/prog1_4.2.1.tar.gz  
-/releases/firstRelease/prog2_3.2.4.tar.gz  
-/releases/secondRelease/prog1_4.2.2.tar.gz 
-/releases/secondRelease/prog2_3.4.2.tar.gz 
+    /packages/prog1_4.2.1.tar.gz               
+    /packages/prog1_4.2.2.tar.gz               
+    /packages/prog2_3.2.4.tar.gz               
+    /packages/prog2_3.4.2.tar.gz               
+    /releases/firstRelease/prog1_4.2.1.tar.gz  
+    /releases/firstRelease/prog2_3.2.4.tar.gz  
+    /releases/secondRelease/prog1_4.2.2.tar.gz 
+    /releases/secondRelease/prog2_3.4.2.tar.gz 
 
 The stow-manager is expecting this repository layout as a prerequisite but is 
 not offering any support here. You have to write your own scripts in order 
