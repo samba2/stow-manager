@@ -12,7 +12,6 @@ replacement for non-root installations of software on a Linux system.
 
 If *stow* is a very simplified *dpkg*, then *stow-manager* is a very simplified 
 (and dumb) version of *apt-get*.
-
 ## Overview
 
 The following picture describes the whole idea of the stow manager:
