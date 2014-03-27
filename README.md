@@ -3,15 +3,15 @@
 This is a working prototype of an application level based package manager
 based on GNU stow (www.gnu.org/software/stow/)
 
+*stow* installs a specific version of a program from the so called *stow dir*
+to a destination directory. 
+
 The intent of this prototype was to find out if adding missing functionality to
 the core *stow* application (like repository support) would be a simple
 replacement for non-root installations of software on a Linux system.
 
 If *stow* is a very simplified *dpkg*, then *stow-manager* is a very simplified 
 (and dumb) version of *apt-get*.
-
-*stow* installs a specific version of a program from the so called "stow dir"
-to a destination directory. 
 
 ## Overview
 
@@ -223,7 +223,9 @@ This is purlely to prevent one big file but rather having multiple, more specifi
 ones. However, the limited namespace (no modules/ classes...) is still the same.
 
 I personally would rewrite the manager with a proper scripting language but would
-still continue to use the power and simplicity of GNU *find* by calling it as a child
-process which output is than further evaluated internally.
+still continue to use the power and simplicity of the GNU *find* command to quickly
+fetch the installed symbolic links. The output of *find* (runs as child process)
+would then be further evaluated internally.
 
-Switch to e.g. Python would make unit testing (which is currently missing) simple.
+Additionally, switching to e.g. Python would make unit testing (which is currently missing) 
+simple.
